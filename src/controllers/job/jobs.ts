@@ -1,4 +1,6 @@
-function getJobs(req, res) {
+import express from "express";
+
+function getJobs(req: express.Request, res: express.Response) {
   return res.status(200).send({
     salary: "40k-50k",
     isFullTime: "true",

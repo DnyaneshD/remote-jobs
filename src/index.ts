@@ -7,7 +7,7 @@ const port = 3000;
 //APi
 app.use(jobsController);
 
-app.get("/ping", (req, res) => {
+app.get("/ping", (req: express.Request, res: express.Response) => {
   res.sendStatus(200);
 });
 
